@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELENESCAPE — Lunar Terrain Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/terrain/assets/index-Bw3yIcQ8.js"></script>
+    <link rel="stylesheet" crossorigin href="/terrain/assets/index-BkmLtTHY.css">
+  <script>
+if (!window.location.hash.includes('analysis') && !window.location.pathname.includes('analysis')) {
+  window.location.hash = '#/analysis';
+}
+</script>
+</head>
+  <body class="bg-[#030509] text-slate-100 overflow-hidden">
+    <style>
+      #selenescape-back-btn {
+        position: fixed;
+        top: 12px;
+        right: 16px;
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 7px 16px;
+        background: rgba(3, 5, 9, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(56, 189, 248, 0.4);
+        border-radius: 9999px;
+        color: #94a3b8;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        line-height: 1;
+      }
+      #selenescape-back-btn:hover {
+        color: #ffffff;
+        border-color: rgba(56, 189, 248, 0.9);
+        background: rgba(56, 189, 248, 0.15);
+      }
+    </style>
+    <a id="selenescape-back-btn" href="/">
+      <span>←</span>
+      <span>BACK TO HOMEPAGE</span>
+    </a>
+    <div id="root"></div>
+  </body>
+</html>
